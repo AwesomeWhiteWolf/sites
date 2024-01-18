@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+    cursor: default;
+    margin: 0;
+    padding: 0;
+    background: #FBE6DE;
+	color: gray;
+    font-size: 25px;
+    font-family: 'Lato', sans-serif;
+}
+
+#navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 5em;
+    width: 90%;
+    padding: 5px;
+}
+
+#logo {
+    margin-top: -4px;
+    margin-left: -5%;
+    margin-right: 13%;
+    width: 5%;
+}
+
+.menu:hover {
+    color: lightblue;
+    cursor: pointer;
+}
+
+main {
+    background: lightblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0;
+}
+
+#orange {
+    background: orange;
+    padding: 5px;
+}
+
+#mainText > *{
+    background: lightblue;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#inputs {
+    background: lightblue;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20%;
+}
+input {
+    margin-top: 5%;
+    margin-right: 3%;
+    padding: 5px;
+}
+
+.image {
+    position: absolute;
+    margin-top: 21%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 4px solid lightblue;
+}
+
+#foot {
+    margin-top: 8%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
