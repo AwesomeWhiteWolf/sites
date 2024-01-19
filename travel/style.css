@@ -1,0 +1,126 @@
+* {
+    padding: 0;
+    margin: 0;
+    color: white;
+    background: url(back.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+header > *,
+header > * > *{
+    background: none;
+}
+
+main, 
+main > *,
+main > * > *,
+main > * > * > *{
+    background: none;
+}
+
+footer,
+footer > *,
+footer > * > *{
+    background: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+}
+.logo {
+    font-size: 40px;
+}
+.navigation {
+    display: flex;
+}
+.text {
+    display: flex;
+    padding-right: 1em;
+    padding-left: 1em;
+}
+
+.text:hover {
+    cursor: pointer;
+    border: 3px solid #04CBB0;
+}
+
+
+
+main {
+    display: flex;
+    padding-left: 1em;
+    justify-content: space-between;
+}
+#right_block {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1em;
+}
+
+#right_block > * {
+    margin-top: 0.75em;
+}
+.watch {
+    display: flex;
+    margin: 2em;
+    padding-top: 1em;
+    cursor: pointer;
+    align-items: center;
+}
+img {
+    padding-right: 1em;
+}
+button {
+    background: #04CBB0;
+    border: 1px solid black;
+    cursor: pointer;
+    width: 70%;
+    padding: 0.5em;
+}
+
+#left_block {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 25%;
+    backdrop-filter: blur(8px);
+    margin-top: 13em;
+    margin-right: 5em;
+    padding: 2em;
+}
+#label {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+h2 {
+    font-size: 1.2em;
+}
+h1 {
+    display: flex;
+    width: 2em;
+    font-size: 3em;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 1em;
+}
+.about, .figure {
+    display: flex;
+}
+.media, .place {
+    display: flex;
+    padding: 0 1em;
+}
+.place {
+    width: 30%;
+}
