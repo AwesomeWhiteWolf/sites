@@ -6,6 +6,7 @@
 	font-family: 'Poppins', sans-serif;
 	color: #304D30;
 	font-size: 25px;
+	user-select: none;
 }
 body {
 	height: 100vh;
@@ -26,11 +27,32 @@ body {
 	background: transparent;
 	backdrop-filter: blur(5px);
 	box-shadow: 0 0 10px rgba(0, 0, 0, .2);
-	border: 2px solid #fff;
 	border-radius: 5%;
 }
+
+
+.main::before {
+	position: absolute;
+	content: '';
+	width: 80%;
+	height: 115.7%;
+	background: transparent;
+	backdrop-filter: blur(0px);
+	transform: rotate(45deg);
+	animation: animate2 5s linear infinite; 
+}
+@keyframes animate2 {
+	from{
+		transform: rotate(0deg);
+	}
+	to{
+		transform: rotate(360deg);
+	}
+}
+
 .main > * {
 	display: flex;
+	z-index: 10;
 }
 
 h1 {
@@ -43,6 +65,12 @@ input, #login-btn {
 	padding: 5px 10px;
 	border-radius: 20px;
 	border: 2px solid #fff;
+	outline: none;
+}
+
+#show{
+	width: 0px;
+	height: 0px;
 }
 
 .remember {
@@ -56,12 +84,17 @@ input, #login-btn {
 	background: #fff;
 	cursor: pointer;
 }
+
+#login-btn:active {
+	background-color: #FFF7F1;
+	border-color: #FFF7F1;
+}
 #check {
 	margin: 0.2rem;
 	pointer-events: none;
 	font-weight: 500;
 }
-input[type="checkbox"] {
+#check {
 	width: 20px;
 	height: 20px;
 }
